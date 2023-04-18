@@ -36,7 +36,7 @@ Before using the Flutter Localization Helper script, you need to set up the Goog
    
    e. In the "Grant this service account access to project" section, add the "Editor" role for "Google Drive API". Click "Continue" and then "Done".
    
-   f. On the "Service Accounts" page, find your newly created service account and click on the pencil icon to edit it.
+   f. On the "Service Accounts" page, find your newly created service account and click on it to edit.
    
    g. Go to the "Keys" tab and click on "Add Key". Select "JSON" as the key type. This will download the `credentials.json` file.
    
