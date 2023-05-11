@@ -31,14 +31,18 @@ fi
 if command -v fvm > /dev/null 2>&1; then
     echo "fvm is installed. Using fvm."
     flutter_cmd="fvm flutter"
+    dart_cmd="fvm dart"
 else
     echo "fvm is not installed. Using default flutter and dart."
     flutter_cmd="flutter"
+    dart_cmd="dart"
 fi
 
-./localization_parser  --locales ${comma_separated_languages} --csv ./localization.csv
+sh compile.sh
+$dart_cmd run ./localization_parser  --locales ${comma_separated_languages} --csv ./localization.csv
 
 $flutter_cmd pub add flutter_localizations --sdk=flutter 
 $flutter_cmd gen-l10n
+
 
 printf "Done.\n"
