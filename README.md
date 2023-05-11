@@ -60,7 +60,13 @@ Before using the Flutter Localization Helper script, you need to set up the Goog
    
    c. Update the languages array with the language codes you want to use.
 
-6. **Run script:**
+6. **.gitignore update:**
+
+    Add following line to your .gitignore:
+    
+    localization_parser
+
+7. **Run script:**
 
     sh update-localization.sh
 
